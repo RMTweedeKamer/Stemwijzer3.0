@@ -18,7 +18,7 @@ class CreateAnswersTable extends Migration
             $table->integer('questionId');
             $table->string('answer');
             $table->enum('type', ['agree', 'disagree']);
-            $table->index(['answerId', 'questionId']);
+            $table->primary(['answerId', 'questionId']);
             $table->foreign('questionId')->references('id')->on('questions');
         });
     }

@@ -4,8 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class Party extends Model
 {
-    public $timestamps = false;
     //
 }

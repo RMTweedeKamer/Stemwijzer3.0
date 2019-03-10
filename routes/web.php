@@ -11,8 +11,36 @@
 |
 */
 
+use App\User;
+use App\Question;
+use App\Answer;
+use App\Services\ResultService;
+
 Route::get('/', function () {
-    return view('home');
+
+    $questions = Question::all();
+    $answers = Answer::all();
+
+    return view('home',  [
+        'questions' => $questions,
+        'answers' => $answers
+    ]);
+});
+
+Route::post('/', function() {
+    $resultService = new ResultService();
+    $amountOfQuestions = Question::count();
+
+
+    $answers = Array();
+    for($i = 1; $i <= $amountOfQuestions; $i++) {
+        $answers[$i] = Array(request('v'.$i), request('b'.$i));
+    }
+
+    $result = $resultService->calculateResult($answers);
+
+    return view('result', ['result' => $result]);
+
 });
 
 Route::get('/more', function () {

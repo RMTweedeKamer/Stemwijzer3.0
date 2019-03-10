@@ -18,7 +18,7 @@ class CreatePartyAnswersTable extends Migration
             $table->integer('answerId');
             $table->integer('questionId');
             $table->text('explanation');
-            $table->index(['partyId', 'answerId', 'questionId']);
+            $table->primary(['partyId', 'answerId', 'questionId']);
             $table->foreign('partyId')->references('id')->on('parties');
             $table->foreign(['answerId', 'questionId'])->references(['answerId', 'questionId'])->on('answers');
         });

@@ -1,7 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="nl_NL">
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <link rel="stylesheet" href="./css/kieswijzer-basestyle.css">
     <meta name="description" content="Officiële RMTK Stemwijzer">
     <meta charset="utf-8">

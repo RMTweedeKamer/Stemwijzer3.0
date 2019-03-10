@@ -18,7 +18,7 @@ class CreatePartiesTable extends Migration
             $table->string('name');
             $table->string('password');
             $table->rememberToken();
-            $table->index('id');
+            $table->primary('id');
         });
     }
 

@@ -18,7 +18,7 @@ class CreateUserAnswersTable extends Migration
             $table->integer('answerId');
             $table->integer('questionId');
             $table->enum('importance', ['low', 'medium', 'high']);
-            $table->index(['userId', 'answerId', 'questionId']);
+            $table->primary(['userId', 'answerId', 'questionId']);
             $table->foreign('userId')->references('id')->on('users');
             $table->foreign(['answerId', 'questionId'])->references(['answerId', 'questionId'])->on('answers');
         });

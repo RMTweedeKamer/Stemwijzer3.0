@@ -17,7 +17,7 @@ class CreateQuestionsTable extends Migration
             $table->integer('id');
             $table->string('question');
             $table->string('description');
-            $table->index('id');
+            $table->primary('id');
         });
     }
 

@@ -42,12 +42,192 @@ ul.navigation li {
     border-left: 1px solid white;
 }
 
-
-
 ul.navigation li a {
     font-family: Raleway, sans-serif;
     color:#FFFFFF;
     font-size:18px;
+}
+
+/*--- Content ---*/
+div.content {
+    text-align: center;
+    padding-bottom:20px;
+}
+
+/*--- Text ---*/
+.content p {
+    text-align: center;
+    font-size: 15px;
+}
+.content h1 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-top: 25px;
+    font-weight: normal;
+}
+
+.content h2 {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    margin: 15px 20% 10px 20%;
+    font-size: 23px;
+    font-weight: normal;
+}
+
+.content h3 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.content label {
+    font-size: 15px;
+}
+
+/*--- Inputfield ---*/
+input[type="text"]{
+    margin-top: 10px;
+}
+
+/*--- Divider ---*/
+hr {
+    color: rgba(0, 83, 137, 0.5);
+    margin-top: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+
+/*--- Nice radio buttons ---*/
+
+input[type="radio"] {
+    display:none;
+}
+
+.answers {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="radio"]+label {
+    display:block;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #606167;
+    color: white;
+    width: 15%;
+}
+
+input[type="radio"]+label:hover {
+    background-color: rgba(0, 83, 137, 0.7);
+}
+
+input[type="radio"]:checked+label {
+    border-left: 1px solid white;
+    background-color: rgba(0, 83, 137, 1);
+}
+
+.answers label {
+    font-size: medium;
+    text-align: center;
+}
+
+/*--- Slider ---*/
+.belang {
+    margin-top: 15px;
+    text-align: center;
+}
+
+input[type=range] {
+    height: 5px;
+    -webkit-appearance: none;
+    margin: 0 10px;
+    width: 10%;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 0 #000000;
+    background: #B6B6B6;
+    border-radius: 25px;
+    border: 1px solid #8A8A8A;
+}
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px #828282;
+    border: 1px solid #8A8A8A;
+    height: 24px;
+    width: 35px;
+    border-radius: 6px;
+    background: #DADADA;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -5px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #B6B6B6;
+}
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 0 #000000;
+    background: rgba(0, 83, 137, 0.5);
+    border-radius: 25px;
+    border: 1px solid #8A8A8A;
+}
+input[type=range]::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #828282;
+    border: 1px solid #8A8A8A;
+    height: 15px;
+    width: 17px;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+}
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 0 #000000;
+    background: #B6B6B6;
+    border-radius: 25px;
+    border: 1px solid #8A8A8A;
+}
+input[type=range]::-ms-fill-lower {
+    background: #B6B6B6;
+    border: 1px solid #8A8A8A;
+    border-radius: 50px;
+    box-shadow: 0 0 0 #000000;
+}
+input[type=range]::-ms-fill-upper {
+    background: #B6B6B6;
+    border: 1px solid #8A8A8A;
+    border-radius: 50px;
+    box-shadow: 0 0 0 #000000;
+}
+input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 1px 1px 1px #828282;
+    border: 1px solid #8A8A8A;
+    height: 24px;
+    width: 35px;
+    border-radius: 6px;
+    background: #DADADA;
+    cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #B6B6B6;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #B6B6B6;
 }
 
 
@@ -55,39 +235,14 @@ ul.navigation li a {
 
 
 /*--- Content ---*/
-div.content {
-	background-color: rgba(255, 255, 255, 0.7);
-    border-top: 0;
-    margin: 5px 0;
-	padding-bottom:10px;
-	float:bottom;
-	width:100%;
 
-}
 .content img {
 	width:650px;
 	height:500px;
 	margin-left: 22%;
 	border: 2px solid black;
 }
-.content p {
-	text-align: center;
-	font-size: 14px;
-    margin: -4px 12px 8px 18px;
-}
-.content h1,h2 {
-	padding-top:30px;
-	text-align: center;
-	margin-top:-4px;
-    font-weight: normal;
-}
 
-.content h2 {
-	margin-top: 0;
-    margin-bottom: 20px;
-	border: 0;
-    font-size: x-large;
-}
 
 input[type="text"].login{
     width: 150px;
@@ -102,6 +257,8 @@ input[type="submit"].login {
     margin-top: 5px;
     margin-left: 75px;
 }
+
+
 
 hr.divider {
     color: rgba(0, 83, 137, 0.5);
